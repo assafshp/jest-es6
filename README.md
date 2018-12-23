@@ -1,75 +1,39 @@
-TO RUN WITH CLI
+
+<p dir='rtl' align='right'>
+הקוד ב- repo הזה מכיל את כל הבדיקות של ה- API Managment. 
+</p>
+
+<p dir='rtl' align='right'>
+הוספה של בדיקה חדשה ל- API חדש
 ================
-jest sum --notify
+</p>
 
-JEST cli
-========
-https://jestjs.io/docs/en/cli.html
+<p dir='rtl' align='right'>
+ 1. תחת התיקיה API צור תיקייה חדשה בשם ה- API החדש (שים לב, השם צריך להיות באותיות גדולות ללא רווחים), לדוגמא: MY_NEW_API
+  <br>
+  2. תחת התיקייה החדשה יש ליצור 3 תיקיות: <br>
+   - ENV - קבצי הקונפיגורציה לפי סביבה <br>
+    - SWAGGER - ה- yaml של ה- API <br>
+    - TESTS - תיקיית הבדיקות<br>
+  3. בתוך תיקיית ה- TESTS יש לייצר קובץ js עבור כל תסריט של בדיקה, לדוגמא: car_policy.dev.test.js (השם באותיות קטנות, כולל הסביבה והמילה test) <br>
+  4. בנוסף, יש ליצור תיקייה בשם ה- test<br>
+  5. בתיקייה זו יש ליצור 2 קבצים:  request.json ו- response.json, בכל קובץ יש לשים את התוכן המאתים של ה- request וה- response כקובץ json<br>
+  6. כעת, יש לערוך את קובץ ה- test:<br>  - צריך להכניס את ה - client id וה- client secret<br>
+  - צריך להכניס את ה- URL המתאים עבור ה- API<br>
+ - עבור כל תשריט בדיקה, יש להכניס את שם ה - test (שהוא גם שם התיקייה)<br>
+ - כעת, עבור כל תשריט יש להגדיר את ה- assertions המתאימים שהם בעצם ליבה של הבדיקה שקובעת האם הבדיקה הצליחה או נכשלה. מומלץ שיהיו לא יותר מ- 5 assertions. 
+</p>
 
-DEMO API
-=========
-https://reqres.in/api/users?page=1
+<p dir='rtl' align='right'>
+הרצה של בדיקות API
+================
+</p>
 
-
-REQUEST-PROMISE
-===============
-https://www.npmjs.com/package/request-promise
-
-
-JEST Cheatsheet
-===============
-https://github.com/sapegin/jest-cheat-sheet
-
-
-JEST CONFIG
-===========
-
-"jest": {
-    "testRegex": "(__tests__/).*\\.(test|spec)\\.ts$",
-    "testEnvironment": "node",
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/preprocessor.js"
-    },
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx"
-    ],
-    "coverageDirectory": "coverage",
-    "coveragePathIgnorePatterns": [
-      "src/.*.d.ts"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{ts,tsx,js,jsx}",
-      "!src/**/*.d.ts",
-      "!src/**/i*.ts",
-      "!**/*.d.ts"
-    ]
-  }
-
-MOCK
-======
-
-// const literallyJustDateNow = () => Date.now();
-
-// test('It should call and return Date.now()', () => {
-//   const realDateNow = Date.now.bind(global.Date);
-//   const dateNowStub = jest.fn(() => 1530518207007);
-//   global.Date.now = dateNowStub;
-
-//   expect(literallyJustDateNow()).toBe(1530518207007);
-//   expect(dateNowStub).toHaveBeenCalled();
-
-//   global.Date.now = realDateNow;
-// });
-
-
-
-TODO
-=======
-- Add security (api gateway)
-- Asserations
-- ENVOIRMENTS
-
+<p dir='rtl' align='right'>
+ יש ללכת לתיקייה הראשית - API_MANAGMENT
+  <br>
+  1. להריץ את הפקודה jest, פקודה זו תריץ את כל הבדיקות שבחבילה <br>
+  2. כדי להריץ בדיקה של API ספציפית, ניתן לכתוב את שם ה- API,  לדוגמא להריץ את הפקודה jest car_policy, שתריץ רק את הבדיקות של ה- API בשם car_policy <br>
+  הערה: לעיתים כדי להריץ את jest יש להשתמש בנתיב המלא: node node_modles/jest/bin/jest.js<br>
+  
 

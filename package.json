@@ -6,14 +6,12 @@
   "scripts": {
     "test": "jest"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "fs": "0.0.1-security",
     "jest": "^23.6.0",
+    "babel-jest": "^23.6.0",
     "request-promise": "^4.2.2",
     "supertest": "^3.3.0"
   }
