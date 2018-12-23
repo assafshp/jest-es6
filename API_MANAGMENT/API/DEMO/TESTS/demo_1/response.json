@@ -1,0 +1,66 @@
+{
+    "statusCode": 200,
+    "body": {
+        "page": 1,
+        "per_page": 3,
+        "total": 12,
+        "total_pages": 4,
+        "data": [
+            {
+                "id": 1,
+                "first_name": "George",
+                "last_name": "Bluth",
+                "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
+            },
+            {
+                "id": 2,
+                "first_name": "Janet",
+                "last_name": "Weaver",
+                "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+            },
+            {
+                "id": 3,
+                "first_name": "Emma",
+                "last_name": "Wong",
+                "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"
+            }
+        ]
+    },
+    "headers": {
+        "date": "Tue, 04 Dec 2018 14:12:35 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "443",
+        "connection": "close",
+        "set-cookie": [
+            "__cfduid=d6e1f3f7c0a7ab86a18a8b46416ebd5ec1543932755; expires=Wed, 04-Dec-19 14:12:35 GMT; path=/; domain=.reqres.in; HttpOnly"
+        ],
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"1bb-D+c3sZ5g5u/nmLPQRl1uVo2heAo\"",
+        "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "server": "cloudflare",
+        "cf-ray": "483ede6b6f5ac2d8-FRA"
+    },
+    "request": {
+        "uri": {
+            "protocol": "https:",
+            "slashes": true,
+            "auth": null,
+            "host": "reqres.in",
+            "port": 443,
+            "hostname": "reqres.in",
+            "hash": null,
+            "search": "?page=1",
+            "query": "page=1",
+            "pathname": "/api/users",
+            "path": "/api/users?page=1",
+            "href": "https://reqres.in/api/users?page=1"
+        },
+        "method": "GET",
+        "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "content-length": 34
+        }
+    }
+}
