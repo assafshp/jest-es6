@@ -1,4 +1,6 @@
 
+[![Build Status](http://localhost:8081/buildStatus/icon?job=s)](http://localhost:8081/job/s)
+
 <p dir='rtl' align='right'>
 הקוד ב- repo הזה מכיל את כל הבדיקות של ה- API Managment. 
 </p>
